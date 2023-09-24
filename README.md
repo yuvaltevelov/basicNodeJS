@@ -12,7 +12,6 @@ This is an enhanced student project focusing on web development with TypeScript 
 2. [Usage](#usage-)
 3. [Features](#features-)
 4. [Contribution](#contribution-)
-5. [License](#license-)
 
 ---
 
@@ -36,8 +35,8 @@ npm install dotenv express --save
 ```
 npm install @swc/cli @swc/core @types/connect-livereload @types/express @types/livereload @types/node chokidar concurrently connect-livereload livereload nodemon typescript --save-dev
 ```
-```
-🖥️ Usage
+
+# 🖥️ Usage
 To run the server, execute:
 ```
 npm run dev
@@ -50,6 +49,6 @@ IP Logging: Logs the IP address of each incoming connection.
 Server Local IP Logging: Logs the local IP address of the server machine.
 TypeScript Support: Enhanced type checking and modern JavaScript features.
 Example Routes: Demonstrative routes to showcase project features.
-🤝 Contribution
+# 🤝 Contribution
 Feel free to fork the project and submit a pull request for contributions.
 I would also be glad for any suggestions or comment for me to keep improving :D
