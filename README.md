@@ -12,12 +12,12 @@ This is an enhanced student project focusing on web development with TypeScript 
 2. [Dependencies](#Dependencies)
 3. [Dev-Dependencies](#dev-dependencies)
 4. [Usage](#usage)
-5. [Features](#features-)
-6. [Contribution](#contribution-)
+5. [Features](#features)
+6. [Contribution](#contribution)
 
 ---
 
-## 🛠️ Installation 
+## Installation 
 
 ### Clone the Repository
 ```
@@ -38,7 +38,7 @@ npm install dotenv express --save
 npm install @swc/cli @swc/core @types/connect-livereload @types/express @types/livereload @types/node chokidar concurrently connect-livereload livereload nodemon typescript --save-dev
 ```
 
-# 🖥️ Usage
+# Usage
 ```
 To run the server, execute:
 ```
@@ -46,7 +46,7 @@ npm run dev
 ```
 Visit http://[Server-Local-IP]:3000 in your web browser, replacing [Server-Local-IP] with the IP address logged in the console when the server starts.
 
-# 🌟 Features
+# Features
 Live Reload: Automatically reloads the web page upon code changes.
 IP Logging: Logs the IP address of each incoming connection.
 Server Local IP Logging: Logs the local IP address of the server machine.
