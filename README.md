@@ -44,7 +44,7 @@ npm run dev
 ```
 Visit http://[Server-Local-IP]:3000 in your web browser, replacing [Server-Local-IP] with the IP address logged in the console when the server starts.
 
-🌟 Features
+# 🌟 Features
 Live Reload: Automatically reloads the web page upon code changes.
 IP Logging: Logs the IP address of each incoming connection.
 Server Local IP Logging: Logs the local IP address of the server machine.
