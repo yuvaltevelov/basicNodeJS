@@ -37,6 +37,7 @@ npm install @swc/cli @swc/core @types/connect-livereload @types/express @types/l
 ```
 
 # 🖥️ Usage
+```
 To run the server, execute:
 ```
 npm run dev
