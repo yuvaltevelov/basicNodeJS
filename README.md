@@ -54,7 +54,7 @@ Server Local IP Logging: Logs the local IP address of the server machine.
 TypeScript Support: Enhanced type checking and modern JavaScript features.
 Example Routes: Demonstrative routes to showcase project features.
 ```
-# 🤝 Contribution
+# Contribution
 ```
 Feel free to fork the project and submit a pull request for contributions.
 I would also be glad for any suggestions or comment for me to keep improving :D
