@@ -11,7 +11,7 @@ This is an enhanced student project focusing on web development with TypeScript 
 1. [Installation](#%EF%B8%8F-installation)
 2. [Dependencies](#Dependencies)
 3. [Dev-Dependencies](#dev-dependencies)
-4. [Usage](#usage-)
+4. [Usage](#usage)
 5. [Features](#features-)
 6. [Contribution](#contribution-)
 
