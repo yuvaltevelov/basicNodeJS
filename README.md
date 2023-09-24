@@ -9,7 +9,7 @@ This is an enhanced student project focusing on web development with TypeScript 
 
 ## 📑 Table of Contents 
 1. [Installation](#installation)
-2. [Dependencies](#Dependencies)
+2. [Dependencies](#dependencies)
 3. [Dev-Dependencies](#dev-dependencies)
 4. [Usage](#usage)
 5. [Features](#features)
