@@ -1,15 +1,31 @@
+// import express from "express";
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-Object.defineProperty(exports, "default", {
+Object.defineProperty(exports, "default" // app.get("/ipv6", (req: Request, res: Response) => {
+ //     let ip = req.ip;
+ //     // Remove the ::ffff: prefix if it exists
+ //     if (ip.startsWith("::ffff:")) {
+ //       ip = ip.substring(7);
+ //     }
+ //     // console.log(`${ip} connected to hello page`);
+ //     res.send("Hello, World!");
+ //   });
+ // app.get('/ipv4', (req: Request, res: Response) => {
+ //      const ipAddress = req.ip;
+ //      res.send(ipAddress)
+ //      console.log(`${req.ip} connected to hello page`);
+ //      return res
+ // })
+, {
     enumerable: true,
     get: function() {
         return _default;
     }
 });
-const _express = /*#__PURE__*/ _interop_require_default(require("express"));
 const _connectlivereload = /*#__PURE__*/ _interop_require_default(require("connect-livereload"));
+const _express = /*#__PURE__*/ _interop_require_default(require("express"));
 function _interop_require_default(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -107,21 +123,6 @@ app.get("/", (req, res)=>{
       </html>
     `);
 });
-// app.get("/ipv6", (req, res) => {
-//     let ip = req.ip;
-//     // Remove the ::ffff: prefix if it exists
-//     if (ip.startsWith("::ffff:")) {
-//       ip = ip.substring(7);
-//     }
-//     // console.log(`${ip} connected to hello page`);
-//     res.send("Hello, World!");
-//   });
-// app.get('/ipv4', (req, res) => {
-//      const ipAddress = req.ip;
-//      res.send(ipAddress)
-//      console.log(`${req.ip} connected to hello page`);
-//      return res
-// })
 app.get("/hello", (req, res)=>{
     // console.log("User connected to hello page");
     // Code snippet with syntax highlighting

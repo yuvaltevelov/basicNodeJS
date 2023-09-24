@@ -1,10 +1,12 @@
-import express from "express";
+// import express from "express";
 import connectLiveReload from "connect-livereload";
+import express, { Request, Response } from 'express';
+
 
 const app = express();
 
 // Middleware to log IP address
-app.use((req, res, next) => {
+app.use((req: Request, res: Response, next) => {
     let ip = req.ip;
   
     // Remove the ::ffff: prefix if it exists
@@ -20,7 +22,7 @@ app.use((req, res, next) => {
 
 app.use(connectLiveReload());
 
-app.use((req, res, next) => {
+app.use((req: Request, res: Response, next) => {
     const originalSend = res.send;
     res.send = function (body) {
         if (typeof body === 'string' && res.get('Content-Type') === 'text/html') {
@@ -32,7 +34,7 @@ app.use((req, res, next) => {
 });
 
 
-app.get("/", (req, res) => {
+app.get("/", (req: Request, res: Response) => {
     // console.log("User connected to main page");
     res.setHeader('Content-Type', 'text/html');
     // Full HTML response
@@ -102,26 +104,8 @@ app.get("/", (req, res) => {
     `);
   });
 
-// app.get("/ipv6", (req, res) => {
-//     let ip = req.ip;
-  
-//     // Remove the ::ffff: prefix if it exists
-//     if (ip.startsWith("::ffff:")) {
-//       ip = ip.substring(7);
-//     }
-  
-//     // console.log(`${ip} connected to hello page`);
-//     res.send("Hello, World!");
-//   });
 
-// app.get('/ipv4', (req, res) => {
-//      const ipAddress = req.ip;
-//      res.send(ipAddress)
-//      console.log(`${req.ip} connected to hello page`);
-//      return res
-// })
-
-app.get("/hello", (req, res) => {
+app.get("/hello", (req: Request, res: Response) => {
     // console.log("User connected to hello page");
     // Code snippet with syntax highlighting
     const p = `
@@ -192,7 +176,7 @@ app.get("/hello", (req, res) => {
     `);
   });
 
-app.get("/message", (req, res) => {
+app.get("/message", (req: Request, res: Response) => {
     // console.log("User connected to message page");
     // console.log(req)
     res.setHeader('Content-Type', 'text/html');
@@ -262,3 +246,23 @@ app.get("/message", (req, res) => {
 });
 
 export default app;
+
+
+// app.get("/ipv6", (req: Request, res: Response) => {
+//     let ip = req.ip;
+  
+//     // Remove the ::ffff: prefix if it exists
+//     if (ip.startsWith("::ffff:")) {
+//       ip = ip.substring(7);
+//     }
+  
+//     // console.log(`${ip} connected to hello page`);
+//     res.send("Hello, World!");
+//   });
+
+// app.get('/ipv4', (req: Request, res: Response) => {
+//      const ipAddress = req.ip;
+//      res.send(ipAddress)
+//      console.log(`${req.ip} connected to hello page`);
+//      return res
+// })
